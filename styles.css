@@ -99,3 +99,15 @@ h2 {
         transform: translateY(0);
     }
 }
+.home{
+    border-radius: 0.5ch;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.home:hover{
+    cursor: pointer;
+    opacity: 90%;
+}
