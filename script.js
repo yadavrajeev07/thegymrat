@@ -65,30 +65,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-   let intervalId;
+     let intervalId;
 
-        // Function to toggle the text in a loop
-        const toggleText = function () {
-            const h1 = document.querySelector('h1');
-            if (h1.innerHTML === "Chai aur Code") {
-                h1.innerHTML = "Best JS Series";
-            } else {
-                h1.innerHTML = "Chai aur Code";
-            }
-        };
+// Function to toggle the text in a loop
+const toggleText = function () {
+    const h1 = document.querySelector('h1');
+    if (h1.innerHTML === "Chai aur Code") {
+        h1.innerHTML = "Best JS Series";
+    } else {
+        h1.innerHTML = "Chai aur Code";
+    }
+};
 
-        // Start the interval loop
-        intervalId = setInterval(toggleText, 2000);
+// Start the interval loop
+intervalId = setInterval(toggleText, 2000);
 
-        // Stop the loop and reset the text
-        document.querySelector('#stop').addEventListener('click', function () {
-            clearInterval(intervalId); // Stop the interval
-            console.log("STOPPED");
+// Stop the loop and reset the text
+document.querySelector('#stop').addEventListener('click', function () {
+    clearInterval(intervalId); // Stop the interval
+    console.log("STOPPED");
 
-            if (this.innerHTML === "Again") {
-                document.querySelector('h1').innerHTML = "Chai aur Code"; // Reset text
-                this.innerHTML = "Stop"; // Reset button text
-            } else {
-                this.innerHTML = "Again"; // Change button text to "Again"
-            }
-        });
+    if (this.innerHTML === "Again") {
+        document.querySelector('h1').innerHTML = "Chai aur Code"; // Reset text
+        this.innerHTML = "Stop"; // Reset button text
+    } else {
+        this.innerHTML = "Again"; // Change button text to "Again"
+    }
+});
