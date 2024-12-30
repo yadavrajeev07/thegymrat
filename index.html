@@ -70,9 +70,9 @@
                          no-repeat center center fixed;  
                          background-size: cover;  
                          height: 100vh;">
-                      <h1>"Yeah Buddy"</h1>
-                    <button id="stop">Stop</button>
                          <div class="col align-content-center justify-content-center">
+                             <h1>"Yeah Buddy"</h1>
+                    <button id="stop">Stop</button>
                             <h1  class="row text-warning justify-content-center bg-black">THE GYM RAT</h1>
                             <p class=" row font-monospace text-black justify-content-center bg-warning">The only blog you'll ever need to get in shape – This is my promise to you.</p>
                                
@@ -400,10 +400,10 @@
 // Function to toggle the text in a loop
 const toggleText = function () {
     const h1 = document.querySelector('h1');
-    if (h1.innerHTML === "Yeah Buddy") {
-        h1.innerHTML = "Light Weight Baby";
+    if (h1.innerHTML === ""Yeah Buddy"") {
+        h1.innerHTML = ""Light Weight Baby"";
     } else {
-        h1.innerHTML = "Yeah Buddy";
+        h1.innerHTML = ""Yeah Buddy"";
     }
 };
 
@@ -416,7 +416,7 @@ document.querySelector('#stop').addEventListener('click', function () {
     console.log("STOPPED");
 
     if (this.innerHTML === "Again") {
-        document.querySelector('h1').innerHTML = "Yeah Buddy"; // Reset text
+        document.querySelector('h1').innerHTML = ""Yeah Buddy""; // Reset text
         this.innerHTML = "Stop"; // Reset button text
     } else {
         this.innerHTML = "Again"; // Change button text to "Again"
